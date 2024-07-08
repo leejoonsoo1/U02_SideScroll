@@ -1,0 +1,49 @@
+#include <string>
+#include <string.h>
+#include <vector>
+#include <queue>
+
+using namespace std;
+int HIEHGT, WIDTH;
+int dX[4] = { 0, 1, 0, -1};
+int dY[4] = { -1, 0, 1, 0};
+
+int GetMinTime(pair<int, int> startPoint, pair<int, int> destPoint, vector<string> maps
+{
+	
+}
+
+int solution(vector<string> maps)
+{
+    HEIGHT = maps.size();
+    WIDTH = maps[0].size();
+    pair<int, int> startPoint;
+    pair<int, int> laberPoint;
+    pair<int, int> escaPoint;
+
+    int findCnt = 0;
+
+    for (int y = 0; y < HEIGHT; y++)
+    {
+        if (findCnt == 3) break;
+
+        for (int x = 0; x < WIDTH; x++)
+        {
+            switch(maps[i][j])
+    	{
+	    case 'S':
+	        findCnt++;
+	        startPoint = {x, y};
+	    break;
+	    case 'L':
+	        findCnt++;
+	        laberPoint = {x, y};
+	    break;
+	    case 'E':
+	        findCnt++;
+	        escaPoint = {x, y};
+	    break;
+	}
+        }
+    }
+}
